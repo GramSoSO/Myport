@@ -13,31 +13,29 @@
         href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
+    <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="someting.css">
 
 
+
+
+    
 </head>
 
 
 
 <body>
 
-    <nav class="siteHeader_nav" x-data="">
-        <ol>
-            <li :class="{ 'is-selected': $store.app.currentPath === '/' }" class="">
-                <div class="_dot">●</div><a class="_text" href="/">Home</a>
-            </li>
-            <li :class="{ 'is-selected': $store.app.currentPath === '/projects/' }" class="">
-                <div class="_dot">●</div><a class="_text" href="indexfortic tac tor.html">GAme!! Tic tac tor!!</a>
-    
-            </li>
-            
-            <li :class="{ 'is-selected': $store.app.currentPath === '/projects/' }" class="">
-                <div class="_dot">●</div><a class="_text" href="Photo.html">Photo</a>
-            </li>
-
-        </ol>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="indexfortic tac tor.html">GAme!</a>
+        <a href="Photo.html">certificate</a>
+        
     </nav>
-    </div>
+
+
+
+
     <div class="container">
         <img class="logo" src="img/8350_0.jpg">
         <h1 class="name">Phakhaphon Srimok</h1>
@@ -95,9 +93,11 @@
                 </ul>
             </ul>
         </div>
-        <p class="bio">
-            นี้เป็นเว็บที่ผมลองสร้างขึ้นมาและสร้างเพิ่มเติมมาเรื่อยๆครับ
-        </p>
+        <div class="loop-element" data-title="Also featured in">
+            <div class="marquee">
+                <div class="marquee--inner heading--md"><span>Phakhaphon srimok Phakhaphon srimok Phakhaphon srimok Phakhaphon srimok Phakhaphon srimok Phakhaphon srimok Phakhaphon srimok Phakhaphon srimok Phakhaphon srimok</span></div>
+            </div>
+        </div>
         <h5>portfolio</h5>
         <hr>
         <div class="row">
@@ -130,13 +130,13 @@
                         src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
 
                 </div>
-
+                
 
             </div>
         </div>
         <h5>คำแนะนำ for me!</h5>
         <br>
-        
+
         <form action="https://formspree.io/f/mjvqqbjk" method="POST">
             <label>
                 Your email:
@@ -146,7 +146,7 @@
                 Your message:
                 <textarea name="message"></textarea>
             </label>
-           
+
             <button type="submit">Send</button>
         </form>
 
